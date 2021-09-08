@@ -34,6 +34,7 @@ const AvailableMeals = () => {
   const mealsList = DUMMY_MEALS.map((meal) =>(
       //console.log({...meal})/////<MealItem key={meal.id} {...meal} />)
       <MealItem 
+        id = {meal.id} //for form input id individuality
         key = {meal.id}
         name = {meal.name}
         description = {meal.description}
