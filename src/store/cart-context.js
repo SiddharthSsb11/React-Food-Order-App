@@ -6,5 +6,5 @@ const CartContext = React.createContext({
   addItem: (item) => {},
   removeItem: (id) => {}
 });
-
+//dummy data fr better autocompletion
 export default CartContext;
