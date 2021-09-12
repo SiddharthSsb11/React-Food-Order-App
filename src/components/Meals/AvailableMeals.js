@@ -33,7 +33,7 @@ const AvailableMeals = () => {
     
   const mealsList = DUMMY_MEALS.map((meal) =>(
       //console.log({...meal})/////<MealItem key={meal.id} {...meal} />)
-      <MealItem 
+      <MealItem //{...meal}
         id = {meal.id} //for form input id individuality //for item obj which to be added inside the card through ctx 
         key = {meal.id}
         name = {meal.name}
