@@ -10,6 +10,7 @@ const Cart = (props) => {
 
   const cartCtx = useContext(CartContext);
   const totalAmountBill = `$${cartCtx.totalAmountBill.toFixed(2)}`;
+  //console.log(totalAmountBill, 'Cart.ks',  cartCtx.totalAmountBill)
   const cartEmpty = cartCtx.items.length > 0; //prefer useStae and if else to manage this 
 
   const cartItemnRemoveItemHandler = (id) => {
