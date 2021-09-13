@@ -9,7 +9,7 @@ import CartItem from './CartItem';
 const Cart = (props) => {
 
   const cartCtx = useContext(CartContext);
-  const totalAmountBill = `$${cartCtx.totalAmountBill.toFixed(2)}`;
+  const totalAmountBill = `₹${cartCtx.totalAmountBill.toFixed(2)}`;
   //console.log(totalAmountBill, 'Cart.ks',  cartCtx.totalAmountBill)
   const cartEmpty = cartCtx.items.length > 0; //prefer useStae and if else to manage this 
 
@@ -18,7 +18,8 @@ const Cart = (props) => {
   }
 
   const cartAddItemHandler = (item) => {
-    cartCtx.addItem(item);
+    cartCtx.addItem({...item, amount: 1} );
+    //cartAddItemHandler.bind(null, item) //{()=>cartAddItemHandler(item)}
   }
 
   const cartItems = (
