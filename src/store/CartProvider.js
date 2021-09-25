@@ -53,7 +53,7 @@ const cartReducer = (state, action) => {
     let updatedItems;
     const updatedTotalAmountBill = state.totalAmountBill - existingCartItem.price;
 
-    if(existingCartItem.amount === 1){
+    if(existingCartItem.amount === 1){ 
       updatedItems = state.items.filter((item) => item.id !== existingCartItem.id)//(item) => item.id !== action.id
     }else{
       const updatedItem = { ...existingCartItem, amount: existingCartItem.amount - 1 };
@@ -75,6 +75,11 @@ const cartReducer = (state, action) => {
       totalAmountBill: updatedTotalAmountBill
     };
   }
+
+  if(action.type === 'CLEAR'){
+    return defaultCartState;
+  }
+  
   return defaultCartState;
 }; 
 
@@ -89,6 +94,10 @@ const CartProvider = (props) => {
     dispatchCartAction({type: 'REMOVE', id: id});
   };
 
+  const clearCartHandler = () => {
+    dispatchCartAction({type: 'CLEAR'});
+  }
+
   //console.log('Beofre', cartState.totalAmountBill);
   
 
@@ -97,6 +106,7 @@ const CartProvider = (props) => {
     totalAmountBill: cartState.totalAmountBill,
     addItem: addItemToCartHandler, 
     removeItem: removeItemFromCartHandler,
+    clearCart: clearCartHandler,
   };
  // console.log(cartState.totalAmountBill,'Just do It', cartContext.totalAmountBill)
   //console.log(typeof cartState.totalAmountBill, typeof cartContext.totalAmountBill);

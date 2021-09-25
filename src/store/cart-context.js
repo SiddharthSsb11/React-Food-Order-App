@@ -4,7 +4,8 @@ const CartContext = React.createContext({
   items: [],
   totalAmountBill: 0,
   addItem: (item) => {},
-  removeItem: (id) => {}
+  removeItem: (id) => {},
+  clearCart: () => {}
 });
 //dummy data fr better autocompletion
 export default CartContext;

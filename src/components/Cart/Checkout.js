@@ -45,10 +45,17 @@ const Checkout = (props) => {
       enteredPostalCodeIsValid;
 
     if (!formIsValid) {
-      return;
+      return; 
     }
 
     // Submit cart data
+
+    props.onConfirm({
+        name: enteredName,
+        street: enteredStreet,
+        city: enteredCity,
+        postalCode: enteredPostalCode
+    })
   };
 
   const nameControlClasses = `${classes.control} ${
