@@ -76,6 +76,7 @@ const AvailableMeals = () => {
     fetchRequest().catch((error) => {
       setIsLoading(false);
       setHttpError(error.message);
+      //console.log(error)
     }); //using then/catch clause to deal with fetchrequest promise; avoiding awaiting the promise returned by fetchReq func
     //thus avoiding try/catch; avoiding async of our useEffect cb func; as useEffect expects return cleanup sync only
     /* setIsLoading(false); */
