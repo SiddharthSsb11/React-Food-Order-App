@@ -1,6 +1,34 @@
-# Getting Started with Create React App
+# Food Delivery App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Order the food from our menu as much as you want.
+
+Its a basic food delivery application made using [React JS](https://reactjs.org/docs/getting-started.html) and powered by [Firebase](https://firebase.google.com/).
+
+This is a _responsive web application_ for viewing in both Mobile and Desktop.
+
+### Few Screenshots
+
+![Homepage](/screenshots/food1.png "Homepage")
+![CartOrder](/screenshots/food2.png "CartOrder")
+
+
+## Features
+
+- Order from the menu. Change the quantity of the food item as per requirement.
+- Full featured order cart. Change quantity in the cart.
+- CRUD functionality. 
+- Order form with each field validity check. 
+- All the data is stored in the firebase realtime-database i.e. <i>persistent</i>
+ 
+## Hosted/Deployed
+
+https://food-order-ssb.netlify.app/
+
+## Install Dependencies
+
+```bash
+npm install
+```
 
 ## Available Scripts
 
@@ -38,33 +66,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
